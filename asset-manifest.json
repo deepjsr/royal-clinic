@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/royal-clinic/static/css/main.68f794de.css",
+    "main.js": "/royal-clinic/static/js/main.d8b3bfd2.js",
+    "static/js/453.fd2f0c4a.chunk.js": "/royal-clinic/static/js/453.fd2f0c4a.chunk.js",
+    "index.html": "/royal-clinic/index.html",
+    "main.68f794de.css.map": "/royal-clinic/static/css/main.68f794de.css.map",
+    "main.d8b3bfd2.js.map": "/royal-clinic/static/js/main.d8b3bfd2.js.map",
+    "453.fd2f0c4a.chunk.js.map": "/royal-clinic/static/js/453.fd2f0c4a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.68f794de.css",
+    "static/js/main.d8b3bfd2.js"
+  ]
+}
