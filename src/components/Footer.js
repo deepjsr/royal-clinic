@@ -10,13 +10,13 @@ export default function Footer() {
         <div>
           <div className="brand brand-footer">
             <span className="brand-mark" aria-hidden="true">
-              <Icon name="heart" size={20} />
+              <Icon name="tooth" size={20} />
             </span>
             <strong>{clinic.name}</strong>
           </div>
           <p className="footer-blurb">
-            {clinic.tagline}. Caring for families with clear advice and
-            approachable treatment.
+            {clinic.tagline}. Caring for families with gentle, honest dentistry
+            and approachable treatment.
           </p>
         </div>
 
@@ -55,8 +55,8 @@ export default function Footer() {
           &copy; {new Date().getFullYear()} {clinic.name}. All rights reserved.
         </p>
         <p className="footer-disclaimer">
-          This website shares general health information only and is not a
-          substitute for personal medical advice from a qualified doctor.
+          This website shares general dental information only and is not a
+          substitute for personal advice from a qualified dentist.
         </p>
       </div>
     </footer>
