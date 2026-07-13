@@ -9,8 +9,8 @@ export default function Services() {
     <>
       <PageHero
         eyebrow="Our Services"
-        title="Everything your everyday health needs"
-        intro="From a stubborn cough to a certificate for work, here’s the care we provide — grouped so you can find the right help fast."
+        title="Everything your smile needs"
+        intro="From routine cleaning to whitening, aligners and emergency relief, here’s the care we provide — grouped so you can find the right help fast."
       />
 
       <section className="section section-tight-top">
@@ -35,10 +35,9 @@ export default function Services() {
           <div className="note" role="note" style={{ marginTop: '2.5rem' }}>
             <Icon name="warning" />
             <span>
-              <strong>Need urgent help?</strong> {clinic.emergency} For cuts,
-              burns, bites or fainting, see our{' '}
-              <Link to="/services/first-aid">first aid & urgent care</Link>{' '}
-              page.
+              <strong>In dental pain right now?</strong> {clinic.emergency} For
+              severe toothache, swelling or a broken tooth, see our{' '}
+              <Link to="/services/emergency">emergency dental care</Link> page.
             </span>
           </div>
         </div>

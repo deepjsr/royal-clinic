@@ -1,177 +1,171 @@
 export const clinic = {
-  name: 'Royal Health',
-  tagline: 'Compassionate care for everyday health',
-  doctor: 'Dr. Mohammed Abdul Tajmool',
-  doctorTitle: 'General Physician',
-  phone: '+91 00000 00000',
-  email: 'care@royalhealth.example',
-  address: 'Royal Health Clinic, Main Road, Your City',
-  hours: 'Mon – Sat: 9:00 AM – 8:00 PM',
-  emergency: 'For life-threatening emergencies, call your local emergency number immediately.',
+  name: 'Tooth Crew Dental Care',
+  tagline: 'Healthy smiles, gentle care',
+  doctor: 'Dr. Jyothsna',
+  doctorTitle: 'Chief Dental Surgeon',
+  phone: '088866 87799',
+  email: 'hello@toothcrew.example',
+  address:
+    'MIG 286, KPHB Road, 4, Remedy Hospital Ln, opp. Global Edge School, Kukatpally, Hyderabad, Telangana 500072',
+  hours: 'Mon – Sun: 10:00 AM – 9:00 PM',
+  emergency: 'For severe facial swelling, uncontrolled bleeding or trauma, call your local emergency number immediately.',
 };
 
 export const navItems = [
-  { to: '/', label: 'Home' },
+  { to: '/home', label: 'Home' },
   {
     to: '/services',
     label: 'Services',
     children: [
-      { to: '/services/treatment', label: 'Treatment for Common Illnesses' },
-      { to: '/services/certificates', label: 'Medical Certificates' },
-      { to: '/services/vaccinations', label: 'Vaccinations' },
-      { to: '/services/first-aid', label: 'First Aid & Urgent Care' },
+      { to: '/services/general-dentistry', label: 'General & Preventive Dentistry' },
+      { to: '/services/cosmetic-dentistry', label: 'Cosmetic Dentistry' },
+      { to: '/services/orthodontics', label: 'Orthodontics & Aligners' },
+      { to: '/services/emergency', label: 'Emergency Dental Care' },
     ],
   },
-  { to: '/about', label: 'About Dr. Tajmool' },
+  { to: '/about', label: 'About the Dentist' },
   { to: '/testimonials', label: 'Patient Stories' },
   { to: '/contact', label: 'Contact' },
 ];
 
 export const serviceCategories = [
   {
-    to: '/services/treatment',
-    icon: 'stethoscope',
-    title: 'Treatment for Common Illnesses',
+    to: '/services/general-dentistry',
+    icon: 'tooth',
+    title: 'General & Preventive Dentistry',
     blurb:
-      'Gentle, thorough care for everyday ailments — from fever and cough to stomach troubles and more.',
+      'Routine check-ups, professional cleaning, fillings and gum care to keep your smile healthy for life.',
   },
   {
-    to: '/services/certificates',
-    icon: 'certificate',
-    title: 'Medical Certificates',
+    to: '/services/cosmetic-dentistry',
+    icon: 'sparkle',
+    title: 'Cosmetic Dentistry',
     blurb:
-      'Fitness, sick-leave and job certificates issued after a proper in-person examination.',
+      'Teeth whitening, veneers and smile makeovers that brighten and reshape your smile beautifully.',
   },
   {
-    to: '/services/vaccinations',
-    icon: 'syringe',
-    title: 'Vaccinations',
+    to: '/services/orthodontics',
+    icon: 'align',
+    title: 'Orthodontics & Aligners',
     blurb:
-      'Routine and travel vaccinations including rabies prevention, given safely by our team.',
+      'Braces and clear aligners for children and adults — straighter teeth and a confident bite.',
   },
   {
-    to: '/services/first-aid',
+    to: '/services/emergency',
     icon: 'firstaid',
-    title: 'First Aid & Urgent Care',
+    title: 'Emergency Dental Care',
     blurb:
-      'Prompt help for cuts, burns, injuries and fainting — calm care when you need it most.',
+      'Same-day relief for severe toothache, broken teeth and swelling — prompt, calm treatment when it hurts.',
   },
 ];
 
 export const conditions = [
-  { icon: 'heart', name: 'Fever & high temperature' },
-  { icon: 'user', name: 'Cough, cold & sore throat' },
-  { icon: 'warning', name: 'Headache & body aches' },
-  { icon: 'shield', name: 'Vomiting & loose motions' },
-  { icon: 'stethoscope', name: 'Stomach pain & acidity' },
-  { icon: 'firstaid', name: 'Dog bites & animal scratches' },
-  { icon: 'warning', name: 'Breathlessness & chest discomfort' },
-  { icon: 'clock', name: 'General weakness & fatigue' },
+  { icon: 'tooth', name: 'Toothache & sensitivity' },
+  { icon: 'warning', name: 'Cavities & tooth decay' },
+  { icon: 'shield', name: 'Bleeding or swollen gums' },
+  { icon: 'sparkle', name: 'Stained or discoloured teeth' },
+  { icon: 'tooth', name: 'Chipped or broken teeth' },
+  { icon: 'user', name: 'Bad breath (halitosis)' },
+  { icon: 'warning', name: 'Wisdom tooth pain' },
+  { icon: 'clock', name: 'Missing teeth & gaps' },
 ];
 
-export const certificateTypes = [
+export const cosmeticTreatments = [
   {
-    title: 'Fitness Certificate',
-    desc: 'Confirms you are medically fit for work, study, sports or travel, based on a check-up.',
+    title: 'Teeth Whitening',
+    desc: 'Safe, professional whitening that lifts years of stains for a noticeably brighter smile.',
   },
   {
-    title: 'Sick Leave Certificate',
-    desc: 'Documents time off needed for an illness or recovery, for your employer or school.',
+    title: 'Veneers & Bonding',
+    desc: 'Thin, custom shells and tooth-coloured bonding to reshape chipped, worn or uneven teeth.',
   },
   {
-    title: 'Job / Pre-employment Certificate',
-    desc: 'A health assessment certificate often required before starting a new job.',
+    title: 'Smile Makeover',
+    desc: 'A tailored plan that combines treatments to transform the look of your whole smile.',
   },
   {
-    title: 'Recovery / Fit-to-return Certificate',
-    desc: 'Shows you have recovered and are cleared to return to normal activities.',
-  },
-];
-
-export const vaccines = [
-  {
-    title: 'Rabies Vaccination',
-    desc: 'After animal bites or scratches, timely rabies shots are essential. We guide the full course.',
-  },
-  {
-    title: 'Tetanus (TT)',
-    desc: 'Recommended after injuries or as a routine booster to prevent serious infection.',
-  },
-  {
-    title: 'Seasonal Flu Vaccine',
-    desc: 'A yearly vaccine that helps protect you and those around you from influenza.',
-  },
-  {
-    title: 'Travel & Routine Vaccines',
-    desc: 'Protective vaccines for travel or everyday prevention — ask what suits your needs.',
+    title: 'Tooth-Coloured Fillings',
+    desc: 'Natural-looking fillings that repair decay while blending seamlessly with your teeth.',
   },
 ];
 
-export const firstAidItems = [
+export const orthodonticOptions = [
+  {
+    title: 'Metal & Ceramic Braces',
+    desc: 'Reliable, precise braces to correct crowding, gaps and bite problems at any age.',
+  },
+  {
+    title: 'Clear Aligners',
+    desc: 'Discreet, removable aligners that straighten teeth gradually with barely-there comfort.',
+  },
+  {
+    title: 'Kids’ Orthodontics',
+    desc: 'Early assessment and gentle treatment to guide healthy jaw and teeth development.',
+  },
+  {
+    title: 'Retainers & Follow-up',
+    desc: 'Custom retainers and regular reviews to keep your new smile perfectly in place.',
+  },
+];
+
+export const emergencyItems = [
   {
     icon: 'firstaid',
-    title: 'Cuts, wounds & injuries',
-    desc: 'Cleaning, dressing and stitches where needed, plus advice on healing at home.',
+    title: 'Severe toothache',
+    desc: 'Fast diagnosis and pain relief, whether it’s decay, infection or a cracked tooth.',
   },
   {
     icon: 'warning',
-    title: 'Burns & scalds',
-    desc: 'Immediate cooling and treatment to ease pain and lower the risk of scarring.',
+    title: 'Knocked-out or broken tooth',
+    desc: 'Quick action to save or restore the tooth after a fall, sports injury or accident.',
+  },
+  {
+    icon: 'shield',
+    title: 'Dental abscess & swelling',
+    desc: 'Prompt treatment of infection to drain, relieve pain and stop it spreading.',
   },
   {
     icon: 'user',
-    title: 'Fainting & dizziness',
-    desc: 'Assessment of the cause and simple steps to help you feel steady again.',
-  },
-  {
-    icon: 'heart',
-    title: 'Sudden illness',
-    desc: 'Quick evaluation of sudden symptoms with referral to a hospital when required.',
+    title: 'Lost filling or crown',
+    desc: 'Same-visit repair or replacement so you can eat and smile comfortably again.',
   },
 ];
 
 export const testimonials = [
   {
-    name: 'A. Rahman',
-    role: 'Treated for persistent fever',
+    name: 'Arukiran Jonnalagadda',
+    role: 'Google review',
     quote:
-      'Dr. Tajmool took the time to listen and explained everything in simple words. I felt cared for, not rushed.',
+      'Quality treatment in affordable prices and very good service by Dr Jyothsna.',
   },
   {
-    name: 'Priya S.',
-    role: 'Needed a fitness certificate for a new job',
-    quote:
-      'The whole process was smooth and honest. I got my certificate the same day after a proper check-up.',
+    name: 'Haritha Boga',
+    role: 'Google review',
+    quote: 'Environment is hygiene and best staff.',
   },
   {
-    name: 'Mr. Khan',
-    role: 'Dog bite — rabies course',
+    name: 'Balakrishna Kokkula',
+    role: 'Google review',
     quote:
-      'I was panicking after the bite. The team stayed calm, explained the vaccine schedule, and guided me through it.',
-  },
-  {
-    name: 'Lakshmi M.',
-    role: 'Brought her child for cough & cold',
-    quote:
-      'Such a friendly, reassuring clinic. My son was comfortable the whole time and recovered quickly.',
+      'Doctor was very cooperative and felt like worth treatment with affordable price.',
   },
 ];
 
 export const faqs = [
   {
-    q: 'Do I need an appointment or can I walk in?',
-    a: 'Walk-ins are welcome during clinic hours, and you can also book ahead by phone to reduce waiting time.',
+    q: 'How often should I get a dental check-up?',
+    a: 'For most people, a check-up and professional cleaning every six months keeps teeth and gums healthy and catches problems early.',
   },
   {
-    q: 'Are certificates given without a check-up?',
-    a: 'No. Every certificate is issued only after a proper in-person examination — this keeps the document valid and reliable.',
+    q: 'Do you offer painless treatment?',
+    a: 'Yes. We use gentle techniques and effective local anaesthesia, so procedures are as comfortable and pain-free as possible.',
   },
   {
-    q: 'What should I bring for a vaccination?',
-    a: 'Bring any previous vaccine records if you have them, and let us know about allergies or past reactions.',
+    q: 'Are walk-ins welcome or do I need an appointment?',
+    a: 'Walk-ins are welcome during clinic hours, and booking ahead by phone helps reduce your waiting time.',
   },
   {
     q: 'Is the clinic suitable for children?',
-    a: 'Yes. We see patients of all ages and aim to keep the experience calm and comfortable for families.',
+    a: 'Absolutely. We see patients of all ages and make dental visits calm, friendly and reassuring for kids and families.',
   },
 ];

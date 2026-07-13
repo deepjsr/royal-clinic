@@ -9,7 +9,7 @@ export default function Testimonials() {
       <PageHero
         eyebrow="Patient Stories"
         title="In their own words"
-        intro="Real experiences from people who visited Royal Health. We’re grateful for the trust our patients place in us."
+        intro={`Real experiences from people who visited ${clinic.name}. We’re grateful for the trust our patients place in us.`}
       />
 
       <section className="section section-tight-top">

@@ -2,27 +2,27 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { PageHero, CTABand } from '../components/CTABand';
 import Icon from '../components/Icon';
-import { vaccines, clinic } from '../data/site';
+import { orthodonticOptions, clinic } from '../data/site';
 
-export default function Vaccinations() {
+export default function Orthodontics() {
   return (
     <>
       <PageHero
-        eyebrow="Vaccinations"
-        title="Protection made simple"
-        intro="Vaccines are one of the easiest ways to stay healthy. Our team gives routine and travel vaccines — including the full rabies course — safely and with clear after-care advice."
+        eyebrow="Orthodontics & Aligners"
+        title="Straighter teeth, at any age"
+        intro="Crowded, gapped or crooked teeth are easier to fix than you might think. We offer braces and clear aligners for children, teens and adults — with a plan that fits your life."
       />
 
       <section className="section section-tight-top">
         <div className="container">
           <div className="grid grid-2">
-            {vaccines.map((v) => (
-              <div className="card" key={v.title}>
+            {orthodonticOptions.map((o) => (
+              <div className="card" key={o.title}>
                 <span className="icon-badge">
-                  <Icon name="syringe" />
+                  <Icon name="align" />
                 </span>
-                <h3>{v.title}</h3>
-                <p>{v.desc}</p>
+                <h3>{o.title}</h3>
+                <p>{o.desc}</p>
               </div>
             ))}
           </div>
@@ -32,51 +32,50 @@ export default function Vaccinations() {
       <section className="section section-alt">
         <div className="container two-col">
           <div>
-            <span className="eyebrow">After an animal bite</span>
-            <h2>Dog bite or scratch? Act quickly.</h2>
+            <span className="eyebrow">Braces or aligners?</span>
+            <h2>The right fit for your smile</h2>
             <p>
-              Animal bites and scratches can carry rabies — a serious infection.
-              The right steps early make all the difference.
+              Both straighten teeth beautifully — the best choice depends on your
+              bite, your lifestyle and how visible you want treatment to be.
             </p>
             <ol className="steps">
               <li>
-                <strong>Wash the wound</strong> gently but thoroughly with soap
-                and running water for several minutes.
+                <strong>Assessment & scan</strong> — we map your teeth and bite
+                to design the ideal movement.
               </li>
               <li>
-                <strong>Apply an antiseptic</strong> and cover with a clean
-                dressing.
+                <strong>Choose your treatment</strong> — braces or discreet
+                aligners, with a clear timeline and cost.
               </li>
               <li>
-                <strong>Come in as soon as possible</strong> — we’ll start the
-                rabies vaccine course and advise on any other care.
+                <strong>Regular reviews</strong> — gentle adjustments until your
+                smile is exactly where it should be.
               </li>
             </ol>
             <Link to="/contact" className="btn btn-primary">
-              <Icon name="calendar" size={18} /> Book a Visit
+              <Icon name="calendar" size={18} /> Book a Consultation
             </Link>
           </div>
           <div>
             <div className="note" role="note" style={{ marginBottom: '1.5rem' }}>
               <Icon name="warning" />
               <span>
-                Don’t wait for symptoms after a suspected rabies exposure —
-                once symptoms appear, the infection is usually fatal. Seek care
-                the same day.
+                Early check-ups matter for children — guiding growth at the right
+                age can make later treatment simpler and shorter.
               </span>
             </div>
             <div className="card">
-              <h3>Before your vaccine</h3>
+              <h3>Before you start</h3>
               <ul className="check-list">
                 <li>
-                  <Icon name="check" size={18} /> Bring any prior vaccine records
+                  <Icon name="check" size={18} /> Bring any past dental records
                 </li>
                 <li>
-                  <Icon name="check" size={18} /> Tell us about allergies or past
-                  reactions
+                  <Icon name="check" size={18} /> Note any jaw pain or clicking
                 </li>
                 <li>
-                  <Icon name="check" size={18} /> Ask us which vaccines you need
+                  <Icon name="check" size={18} /> Ask us about flexible payment
+                  plans
                 </li>
               </ul>
               <p>

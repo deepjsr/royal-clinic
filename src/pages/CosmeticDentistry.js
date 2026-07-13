@@ -2,24 +2,24 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { PageHero, CTABand } from '../components/CTABand';
 import Icon from '../components/Icon';
-import { certificateTypes, clinic } from '../data/site';
+import { cosmeticTreatments, clinic } from '../data/site';
 
-export default function Certificates() {
+export default function CosmeticDentistry() {
   return (
     <>
       <PageHero
-        eyebrow="Medical Certificates"
-        title="Certificates you can rely on"
-        intro="Need proof of fitness or time off? We issue medical certificates only after a proper in-person examination, so they’re valid and trustworthy."
+        eyebrow="Cosmetic Dentistry"
+        title="Love the way you smile"
+        intro="Whether you want a brighter shade or a full smile makeover, we offer natural-looking treatments tailored to your face, your teeth and your goals."
       />
 
       <section className="section section-tight-top">
         <div className="container">
           <div className="grid grid-2">
-            {certificateTypes.map((c) => (
+            {cosmeticTreatments.map((c) => (
               <div className="card" key={c.title}>
                 <span className="icon-badge">
-                  <Icon name="certificate" />
+                  <Icon name="sparkle" />
                 </span>
                 <h3>{c.title}</h3>
                 <p>{c.desc}</p>
@@ -30,9 +30,9 @@ export default function Certificates() {
           <div className="note" role="note" style={{ marginTop: '2rem' }}>
             <Icon name="warning" />
             <span>
-              Every certificate requires a real check-up. We do not backdate
-              documents or issue them without seeing you — this protects you and
-              the people who rely on the certificate.
+              Healthy teeth come first. We assess your gums and enamel before any
+              cosmetic work, so your new smile is beautiful <em>and</em> built to
+              last.
             </span>
           </div>
         </div>
@@ -42,42 +42,41 @@ export default function Certificates() {
         <div className="container two-col">
           <div>
             <span className="eyebrow">How it works</span>
-            <h2>Getting your certificate, made easy</h2>
+            <h2>Your smile makeover, step by step</h2>
             <ol className="steps">
               <li>
-                <strong>Book or walk in</strong> and tell us which certificate
-                you need.
+                <strong>Smile consultation</strong> — we listen to what you’d
+                like to change and examine your teeth.
               </li>
               <li>
-                <strong>We examine you</strong> and complete any required
-                checks.
+                <strong>A personalised plan</strong> — we show you the options,
+                timeline and costs before we begin.
               </li>
               <li>
-                <strong>You receive the signed certificate</strong>, usually the
-                same visit.
+                <strong>Your new smile</strong> — treatment carried out gently,
+                with results you’ll be proud of.
               </li>
             </ol>
           </div>
           <div className="card">
-            <h3>What to bring</h3>
+            <h3>Good to know</h3>
             <ul className="check-list">
               <li>
-                <Icon name="check" size={18} /> A photo ID
+                <Icon name="check" size={18} /> Natural-looking, custom results
               </li>
               <li>
-                <Icon name="check" size={18} /> Any form your employer or
-                school requires
+                <Icon name="check" size={18} /> Flexible options for every budget
               </li>
               <li>
-                <Icon name="check" size={18} /> Previous reports, if relevant
+                <Icon name="check" size={18} /> No pressure — it’s your choice
               </li>
             </ul>
             <p>
-              Questions? Call{' '}
+              Curious what’s possible? Call{' '}
               <a href={`tel:${clinic.phone.replace(/\s/g, '')}`}>
                 {clinic.phone}
               </a>{' '}
-              or <Link to="/contact">reach out here</Link>.
+              or <Link to="/contact">book a consultation</Link>.
             </p>
           </div>
         </div>

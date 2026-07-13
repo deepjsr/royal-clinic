@@ -16,17 +16,16 @@ export default function Home() {
       <section className="hero">
         <div className="container hero-grid">
           <div className="hero-copy">
-            <span className="eyebrow">Family & general healthcare</span>
-            <h1>Hello, I’m {clinic.doctor}.</h1>
+            <span className="eyebrow">Family & cosmetic dentistry</span>
+            <h1>Welcome to {clinic.name}.</h1>
             <p className="hero-lede">
-              At <strong>{clinic.name}</strong>, we treat the everyday health
-              worries that bring people through our door — fevers, coughs,
-              tummy troubles, certificates, vaccines and injuries — with calm,
-              clear and caring attention.
+              From routine check-ups and cleaning to whitening, aligners and
+              same-day emergency relief, <strong>{clinic.name}</strong> looks
+              after every smile with gentle, painless and caring attention.
             </p>
             <div className="hero-actions">
               <Link to="/contact" className="btn btn-primary">
-                <Icon name="calendar" size={18} /> Book a Visit
+                <Icon name="calendar" size={18} /> Book an Appointment
               </Link>
               <Link to="/services" className="btn btn-secondary">
                 <Icon name="arrow" size={18} /> See Our Services
@@ -37,7 +36,7 @@ export default function Home() {
                 <Icon name="check" size={18} /> Walk-ins welcome
               </li>
               <li>
-                <Icon name="check" size={18} /> Clear, plain-language advice
+                <Icon name="check" size={18} /> Gentle, painless treatment
               </li>
               <li>
                 <Icon name="check" size={18} /> All ages cared for
@@ -48,7 +47,7 @@ export default function Home() {
           <aside className="hero-card" aria-label="Clinic at a glance">
             <div className="hero-card-top">
               <span className="brand-mark" aria-hidden="true">
-                <Icon name="heart" size={22} />
+                <Icon name="tooth" size={22} />
               </span>
               <div>
                 <strong>{clinic.name}</strong>
@@ -58,7 +57,7 @@ export default function Home() {
             <dl className="hero-facts">
               <div>
                 <dt>
-                  <Icon name="user" size={18} /> Doctor
+                  <Icon name="user" size={18} /> Dentist
                 </dt>
                 <dd>{clinic.doctor}</dd>
               </div>
@@ -88,24 +87,24 @@ export default function Home() {
       <section className="section section-tight trust-strip">
         <div className="container trust-grid">
           <div>
-            <Icon name="stethoscope" size={22} />
-            <strong>Everyday care</strong>
-            <span>Common illnesses treated with care</span>
+            <Icon name="tooth" size={22} />
+            <strong>Preventive care</strong>
+            <span>Check-ups & cleaning done gently</span>
           </div>
           <div>
-            <Icon name="certificate" size={22} />
-            <strong>Certificates</strong>
-            <span>Issued after a real check-up</span>
+            <Icon name="sparkle" size={22} />
+            <strong>Cosmetic</strong>
+            <span>Whitening, veneers & makeovers</span>
           </div>
           <div>
-            <Icon name="syringe" size={22} />
-            <strong>Vaccinations</strong>
-            <span>Rabies, tetanus & more</span>
+            <Icon name="align" size={22} />
+            <strong>Orthodontics</strong>
+            <span>Braces & clear aligners</span>
           </div>
           <div>
             <Icon name="firstaid" size={22} />
-            <strong>First aid</strong>
-            <span>Prompt help for injuries</span>
+            <strong>Emergencies</strong>
+            <span>Same-day relief for dental pain</span>
           </div>
         </div>
       </section>
@@ -114,7 +113,7 @@ export default function Home() {
         <div className="container">
           <div className="section-head">
             <span className="eyebrow">What we do</span>
-            <h2>Care for the things that worry you most</h2>
+            <h2>Complete dental care under one roof</h2>
             <p>
               Four simple areas of care, so you always know where to turn.
             </p>
@@ -139,11 +138,11 @@ export default function Home() {
       <section className="section section-alt">
         <div className="container">
           <div className="section-head">
-            <span className="eyebrow">Common conditions</span>
-            <h2>Not feeling well? You’re in the right place.</h2>
+            <span className="eyebrow">Common concerns</span>
+            <h2>Tooth trouble? You’re in the right place.</h2>
             <p>
-              We regularly help with these everyday concerns — no symptom too
-              small to discuss.
+              We regularly help with these everyday dental concerns — no worry
+              too small to discuss.
             </p>
           </div>
           <div className="grid grid-4">
@@ -157,7 +156,7 @@ export default function Home() {
             ))}
           </div>
           <p className="center-note">
-            This list is a guide only. If you have a symptom not listed here,
+            This list is a guide only. If you have a concern not listed here,
             please <Link to="/contact">get in touch</Link> — we’re glad to help.
           </p>
         </div>
@@ -167,9 +166,9 @@ export default function Home() {
         <div className="container two-col">
           <div>
             <span className="eyebrow">Our approach</span>
-            <h2>Healthcare that puts you at ease</h2>
+            <h2>Dentistry that puts you at ease</h2>
             <p>
-              A visit to the doctor can feel stressful. We keep things simple:
+              A trip to the dentist can feel stressful. We keep things simple:
               we listen first, explain clearly, and agree on a plan together.
             </p>
             <ul className="check-list">
@@ -181,18 +180,18 @@ export default function Home() {
                 <Icon name="check" size={18} /> We never rush your questions
               </li>
               <li>
-                <Icon name="check" size={18} /> We focus on what you actually
-                need
+                <Icon name="check" size={18} /> We focus on gentle, pain-free
+                care
               </li>
             </ul>
             <Link to="/about" className="btn btn-secondary">
-              Meet Dr. Tajmool
+              Meet {clinic.doctor}
             </Link>
           </div>
           <div className="approach-card">
             <Icon name="quote" size={34} />
             <blockquote>
-              “My goal is simple — help you understand your health and feel
+              “My goal is simple — help you understand your smile and feel
               confident about the next step.”
             </blockquote>
             <cite>— {clinic.doctor}</cite>
@@ -204,7 +203,7 @@ export default function Home() {
         <div className="container">
           <div className="section-head">
             <span className="eyebrow">Patient stories</span>
-            <h2>Trusted by local families</h2>
+            <h2>Trusted by local smiles</h2>
           </div>
           <div className="grid grid-3">
             {testimonials.slice(0, 3).map((t) => (

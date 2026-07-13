@@ -7,33 +7,33 @@ export default function About() {
   return (
     <>
       <PageHero
-        eyebrow="About Dr. Tajmool"
+        eyebrow="About the Dentist"
         title={`Meet ${clinic.doctor}`}
-        intro="The doctor behind Royal Health — and the simple belief that good care should feel human, not hurried."
+        intro="The dentist behind Tooth Crew Dental Care — and the simple belief that great dentistry should feel gentle, honest and human, not hurried."
       />
 
       <section className="section section-tight-top">
         <div className="container two-col about-grid">
           <div className="about-portrait" aria-hidden="true">
             <span className="brand-mark brand-mark-lg">
-              <Icon name="user" size={56} />
+              <Icon name="tooth" size={56} />
             </span>
           </div>
           <div>
-            <h2>A doctor who takes time to listen</h2>
+            <h2>A dentist who takes time to listen</h2>
             <p>
               {clinic.doctor} is a {clinic.doctorTitle} who founded {clinic.name}{' '}
-              to give local families a place where everyday health concerns are
-              taken seriously — and explained simply.
+              to give local families a place where dental care feels calm,
+              comfortable and clearly explained.
             </p>
             <p>
-              Whether it’s a child’s cough, a parent’s certificate for work, or a
-              worrying animal bite, the aim is always the same: clear answers,
-              kind treatment, and a plan you understand.
+              Whether it’s a child’s first check-up, a nervous patient’s filling,
+              or a smile makeover, the aim is always the same: clear answers,
+              gentle treatment, and a plan you understand.
             </p>
             <ul className="check-list">
               <li>
-                <Icon name="check" size={18} /> General physician for all ages
+                <Icon name="check" size={18} /> Dental care for all ages
               </li>
               <li>
                 <Icon name="check" size={18} /> Calm, judgement-free consultations
@@ -69,7 +69,7 @@ export default function About() {
               <h3>Honest advice</h3>
               <p>
                 We tell you what you need — and what you don’t — without
-                unnecessary tests or medicine.
+                unnecessary treatment or pressure.
               </p>
             </div>
             <div className="card">
@@ -78,8 +78,8 @@ export default function About() {
               </span>
               <h3>Prevention first</h3>
               <p>
-                Vaccines and check-ups today can spare you bigger problems
-                tomorrow.
+                Regular check-ups and cleaning today can spare you bigger
+                problems tomorrow.
               </p>
             </div>
           </div>

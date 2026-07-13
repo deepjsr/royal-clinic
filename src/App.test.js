@@ -8,5 +8,5 @@ test('renders the clinic name', () => {
       <App />
     </MemoryRouter>
   );
-  expect(screen.getByText(/Royal Health/i)).toBeInTheDocument();
+  expect(screen.getAllByText(/Tooth Crew Dental Care/i)[0]).toBeInTheDocument();
 });

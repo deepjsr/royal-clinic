@@ -40,9 +40,9 @@ export default function Header() {
   return (
     <header className="site-header">
       <div className="container header-inner">
-        <Link to="/" className="brand" aria-label={`${clinic.name} home`}>
+        <Link to="/home" className="brand" aria-label={`${clinic.name} home`}>
           <span className="brand-mark" aria-hidden="true">
-            <Icon name="heart" size={22} />
+            <Icon name="tooth" size={22} />
           </span>
           <span className="brand-text">
             <strong>{clinic.name}</strong>

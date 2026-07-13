@@ -4,22 +4,21 @@ import { PageHero, CTABand } from '../components/CTABand';
 import Icon from '../components/Icon';
 import { conditions } from '../data/site';
 
-export default function Treatment() {
+export default function GeneralDentistry() {
   return (
     <>
       <PageHero
-        eyebrow="Treatment for Common Illnesses"
-        title="Feeling unwell? Let’s get you sorted."
-        intro="Most days, health worries are everyday ones — and that’s exactly what we’re here for. Clear diagnosis, gentle treatment, and advice you can actually follow."
+        eyebrow="General & Preventive Dentistry"
+        title="Everyday care that keeps smiles healthy"
+        intro="Regular check-ups, cleaning and gentle treatment are the foundation of a healthy mouth. We catch problems early and keep your teeth and gums in great shape."
       />
 
       <section className="section section-tight-top">
         <div className="container">
           <div className="section-head">
-            <h2>Conditions we commonly treat</h2>
+            <h2>Concerns we commonly treat</h2>
             <p>
-              If you’re experiencing any of these, book a visit or simply walk
-              in.
+              If you’re noticing any of these, book a visit or simply walk in.
             </p>
           </div>
           <div className="grid grid-3">
@@ -42,19 +41,20 @@ export default function Treatment() {
             <h2>A calm visit, step by step</h2>
             <ol className="steps">
               <li>
-                <strong>Tell us what’s wrong</strong> — in your own words, no
-                medical terms needed.
+                <strong>Tell us what’s bothering you</strong> — in your own
+                words, no dental jargon needed.
               </li>
               <li>
-                <strong>A careful check-up</strong> — we examine and may suggest
-                simple tests if helpful.
+                <strong>A thorough examination</strong> — we check your teeth,
+                gums and bite, with X-rays if helpful.
               </li>
               <li>
-                <strong>A clear plan</strong> — treatment, medicines and
-                home-care explained plainly.
+                <strong>A clear treatment plan</strong> — cleaning, fillings or
+                gum care explained plainly, with costs upfront.
               </li>
               <li>
-                <strong>Follow-up</strong> — we’re here if symptoms don’t settle.
+                <strong>Prevention & follow-up</strong> — home-care tips and
+                reminders so problems don’t come back.
               </li>
             </ol>
           </div>
@@ -62,23 +62,23 @@ export default function Treatment() {
             <div className="note" role="note" style={{ marginBottom: '1.5rem' }}>
               <Icon name="warning" />
               <span>
-                <strong>Breathlessness, severe chest pain or a very high fever
-                in a baby</strong> can be serious. Seek emergency care straight
-                away.
+                <strong>Facial swelling, severe pain or a knocked-out tooth</strong>{' '}
+                should be seen the same day. Visit our{' '}
+                <Link to="/services/emergency">emergency dental care</Link> page.
               </span>
             </div>
             <div className="card">
-              <h3>How we keep it simple for you</h3>
+              <h3>How we keep it comfortable</h3>
               <ul className="check-list">
                 <li>
-                  <Icon name="check" size={18} /> Plain-language explanations
+                  <Icon name="check" size={18} /> Gentle, painless techniques
                 </li>
                 <li>
-                  <Icon name="check" size={18} /> Honest guidance on when to
-                  worry
+                  <Icon name="check" size={18} /> Honest advice on what you
+                  actually need
                 </li>
                 <li>
-                  <Icon name="check" size={18} /> Affordable, sensible treatment
+                  <Icon name="check" size={18} /> Transparent, sensible pricing
                 </li>
               </ul>
               <Link to="/contact" className="btn btn-primary">

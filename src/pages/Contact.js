@@ -5,10 +5,10 @@ import Icon from '../components/Icon';
 import { clinic } from '../data/site';
 
 const reasons = [
-  'Common illness (fever, cough, cold, etc.)',
-  'Medical certificate',
-  'Vaccination',
-  'First aid / injury',
+  'Check-up & cleaning',
+  'Cosmetic (whitening, veneers, etc.)',
+  'Braces / clear aligners',
+  'Dental emergency / pain',
   'General enquiry',
 ];
 
@@ -33,8 +33,8 @@ export default function Contact() {
     <>
       <PageHero
         eyebrow="Contact & Booking"
-        title="Let’s get you the care you need"
-        intro="Book a consultation, ask a question, or just let us know you’re coming. We’ll respond as quickly as we can."
+        title="Let’s get your smile booked in"
+        intro="Book an appointment, ask a question, or just let us know you’re coming. We’ll respond as quickly as we can."
       />
 
       <section className="section section-tight-top">
@@ -190,7 +190,7 @@ export default function Contact() {
           <p>
             Prefer to read first? Explore our{' '}
             <Link to="/services">services</Link> or{' '}
-            <Link to="/about">meet Dr. Tajmool</Link>.
+            <Link to="/about">meet {clinic.doctor}</Link>.
           </p>
         </div>
       </section>
