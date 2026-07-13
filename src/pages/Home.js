@@ -71,7 +71,11 @@ export default function Home() {
                 <dt>
                   <Icon name="map" size={18} /> Location
                 </dt>
-                <dd>{clinic.address}</dd>
+                <dd>
+                  <a href={clinic.mapsUrl} target="_blank" rel="noreferrer">
+                    {clinic.address}
+                  </a>
+                </dd>
               </div>
             </dl>
             <a

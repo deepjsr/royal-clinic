@@ -35,7 +35,10 @@ export default function Footer() {
           <h4>Visit & Contact</h4>
           <ul className="footer-contact">
             <li>
-              <Icon name="map" size={18} /> {clinic.address}
+              <Icon name="map" size={18} />{' '}
+              <a href={clinic.mapsUrl} target="_blank" rel="noreferrer">
+                {clinic.address}
+              </a>
             </li>
             <li>
               <Icon name="phone" size={18} />{' '}

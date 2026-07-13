@@ -7,6 +7,12 @@ export const clinic = {
   email: 'hello@toothcrew.example',
   address:
     'MIG 286, KPHB Road, 4, Remedy Hospital Ln, opp. Global Edge School, Kukatpally, Hyderabad, Telangana 500072',
+  mapsUrl:
+    'https://www.google.com/maps/search/?api=1&query=' +
+    encodeURIComponent(
+      'MIG 286, KPHB Road, 4, Remedy Hospital Ln, opp. Global Edge School, Kukatpally, Hyderabad, Telangana 500072'
+    ),
+  whatsapp: '918886687799',
   hours: 'Mon – Sun: 10:00 AM – 9:00 PM',
   emergency: 'For severe facial swelling, uncontrolled bleeding or trauma, call your local emergency number immediately.',
 };

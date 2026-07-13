@@ -59,7 +59,9 @@ export default function Contact() {
                 </span>
                 <div>
                   <strong>Visit</strong>
-                  <span>{clinic.address}</span>
+                  <a href={clinic.mapsUrl} target="_blank" rel="noreferrer">
+                    {clinic.address}
+                  </a>
                 </div>
               </li>
               <li>

@@ -14,6 +14,7 @@ import EmergencyCare from './pages/EmergencyCare';
 import Testimonials from './pages/Testimonials';
 import Contact from './pages/Contact';
 import NotFound from './pages/NotFound';
+import { clinic } from './data/site';
 
 export default function App() {
   return (
@@ -39,6 +40,16 @@ export default function App() {
         </Routes>
       </main>
       <Footer />
+      <a
+        className="floating-whatsapp"
+        href={`https://wa.me/${clinic.whatsapp}`}
+        target="_blank"
+        rel="noreferrer"
+        aria-label={`Chat on WhatsApp with ${clinic.name}`}
+      >
+        <span className="floating-whatsapp__icon">💬</span>
+        <span className="floating-whatsapp__text">WhatsApp</span>
+      </a>
     </>
   );
 }
