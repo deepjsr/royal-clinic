@@ -4,6 +4,7 @@ import './App.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
+import ViewTransitions from './components/ViewTransitions';
 import Home from './pages/Home';
 import About from './pages/About';
 import Services from './pages/Services';
@@ -25,19 +26,23 @@ export default function App() {
       <ScrollToTop />
       <Header />
       <main id="main">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/home" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/services/general-dentistry" element={<GeneralDentistry />} />
-          <Route path="/services/cosmetic-dentistry" element={<CosmeticDentistry />} />
-          <Route path="/services/orthodontics" element={<Orthodontics />} />
-          <Route path="/services/emergency" element={<EmergencyCare />} />
-          <Route path="/testimonials" element={<Testimonials />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
+        <ViewTransitions>
+          {(location) => (
+            <Routes location={location}>
+              <Route path="/" element={<Home />} />
+              <Route path="/home" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/services" element={<Services />} />
+              <Route path="/services/general-dentistry" element={<GeneralDentistry />} />
+              <Route path="/services/cosmetic-dentistry" element={<CosmeticDentistry />} />
+              <Route path="/services/orthodontics" element={<Orthodontics />} />
+              <Route path="/services/emergency" element={<EmergencyCare />} />
+              <Route path="/testimonials" element={<Testimonials />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          )}
+        </ViewTransitions>
       </main>
       <Footer />
       <a

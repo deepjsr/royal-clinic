@@ -261,11 +261,13 @@ ul {
 }
 
 @media (max-width: 640px) {
+
   .grid-2,
   .grid-3,
   .grid-4 {
     grid-template-columns: 1fr;
   }
+
   .section {
     padding: 2.75rem 0;
   }
@@ -317,4 +319,14 @@ ul {
   border: 1px solid var(--teal-100);
   padding: 0.25rem 0.7rem;
   border-radius: 999px;
+}
+
+/* Page-to-page cross-fade via the View Transitions API */
+@media (prefers-reduced-motion: no-preference) {
+
+  ::view-transition-old(root),
+  ::view-transition-new(root) {
+    animation-duration: 0.13s;
+    animation-timing-function: ease;
+  }
 }
