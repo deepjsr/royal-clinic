@@ -9,9 +9,7 @@ export default function Footer() {
       <div className="container footer-grid">
         <div>
           <div className="brand brand-footer">
-            <span className="brand-mark" aria-hidden="true">
-              <Icon name="tooth" size={20} />
-            </span>
+            <img src="/logo-blue.png" alt={clinic.name} className="brand-mark" />
             <strong>{clinic.name}</strong>
           </div>
           <p className="footer-blurb">

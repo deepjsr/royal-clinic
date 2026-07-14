@@ -91,7 +91,7 @@ export default function Home() {
       <section className="section section-tight trust-strip">
         <div className="container trust-grid">
           <div>
-            <Icon name="tooth" size={22} />
+            <Icon name="tooth" size={22} className="tooth-icon-blue" />
             <strong>Preventive care</strong>
             <span>Check-ups & cleaning done gently</span>
           </div>

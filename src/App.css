@@ -29,14 +29,23 @@
 }
 
 .brand-mark {
-  width: 40px;
-  height: 40px;
-  object-fit: contain;
+  width: 44px;
+  height: 44px;
+  object-fit: cover;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   flex: 0 0 auto;
-  mix-blend-mode: multiply;
+  border-radius: 50%;
+  padding: 4px;
+  background: #ffffff;
+  border: 2px solid #dbeafe;
+  box-shadow: 0 6px 16px rgba(37, 99, 235, 0.18);
+  color: #2563EB;
+}
+
+.tooth-icon-blue {
+  color: #2563EB;
 }
 
 .brand-mark-lg {
