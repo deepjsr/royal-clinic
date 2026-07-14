@@ -2,7 +2,6 @@ import React, { useState, useRef, useEffect } from 'react';
 import { NavLink, Link, useLocation } from 'react-router-dom';
 import { navItems, clinic } from '../data/site';
 import Icon from './Icon';
-import Logo from './Logo';
 
 function ServicesSubmenu({ onNavigate }) {
   const services = navItems.find((i) => i.children);
@@ -42,7 +41,7 @@ export default function Header() {
     <header className="site-header">
       <div className="container header-inner">
         <Link to="/home" className="brand" aria-label={`${clinic.name} home`}>
-          <Logo size={40} className="brand-mark" />
+          <img src="/logo1.png" alt={clinic.name} className="brand-mark" />
           <span className="brand-text">
             <strong>{clinic.name}</strong>
             <small>{clinic.tagline}</small>

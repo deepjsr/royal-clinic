@@ -4,6 +4,7 @@
   top: 0;
   z-index: 50;
   background: rgba(255, 255, 255, 0.92);
+  -webkit-backdrop-filter: saturate(180%) blur(8px);
   backdrop-filter: saturate(180%) blur(8px);
   border-bottom: 1px solid var(--border);
 }
@@ -30,10 +31,12 @@
 .brand-mark {
   width: 40px;
   height: 40px;
+  object-fit: contain;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   flex: 0 0 auto;
+  mix-blend-mode: multiply;
 }
 
 .brand-mark-lg {
